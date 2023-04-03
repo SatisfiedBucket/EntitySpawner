@@ -7,20 +7,20 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Spawner.createEntity({
     CustomName = "Ambush",
     Model = "rbxassetid://11652567875", -- Your entity's model url here ("rbxassetid://1234567890" or GitHub raw url)
-    Speed = 100,
+    Speed = 150,
     MoveDelay = 2,
     HeightOffset = 0,
     CanKill = false,
-    KillRange = 50,
+    KillRange = 100,
     SpawnInFront = false,
     ShatterLights = true,
     FlickerLights = {
-        Enabled = true,
+        Enabled = false,
         Duration = 1
     },
     Cycles = {
-        Min = 1,
-        Max = 1,
+        Min = 2,
+        Max = 5,
         Delay = 2
     },
     CamShake = {
